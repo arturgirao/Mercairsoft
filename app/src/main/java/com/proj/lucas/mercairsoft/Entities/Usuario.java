@@ -1,6 +1,9 @@
 package com.proj.lucas.mercairsoft.Entities;
 
+import com.google.firebase.database.DatabaseReference;
+
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * Created by Lucas on 11/11/2017.
@@ -54,4 +57,38 @@ public class Usuario implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    private void setNameInMap(Map<String, Object> map) {
+        if (getNome() != null) {
+            map.put("name", getNome());
+        }
+    }
+    public void setNameIfNull(String name) {
+        if (this.nome == null) {
+            this.nome = name;
+        }
+    }
+
+    private void setEmailInMap(Map<String, Object> map) {
+        if (getEmail() != null) {
+            map.put("email", getEmail());
+        }
+    }
+    public void setEmailIfNull(String email) {
+        if (this.email == null) {
+            this.email = email;
+        }
+    }
+
+    public void saveDB(DatabaseReference.CompletionListener... completionListener) {
+        DatabaseReference firebase = LibraryClass.getFirebase().child("users").child(getId());
+        if (completionListener.length == 0) {
+            firebase.setValue(this);
+        } else {
+            firebase.setValue(this, completionListener[0]);
+        }
+    }
+
+
+
 }

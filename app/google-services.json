@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "847519347668",
+    "firebase_url": "https://mercairsoftmaster.firebaseio.com",
+    "project_id": "mercairsoftmaster",
+    "storage_bucket": "mercairsoftmaster.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847519347668:android:01d52eba060fa8dd",
+        "android_client_info": {
+          "package_name": "com.proj.lucas.mercairsoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847519347668-nhj0apde732jks8qmflg9a89nctu05hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proj.lucas.mercairsoft",
+            "certificate_hash": "fb86bab6d6fdc9d9429c59773bdf026e970238e7"
+          }
+        },
+        {
+          "client_id": "847519347668-pfvncth6nf95mu96fqhfvolqe0m2le6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7c3i7k_6ySkUoaRumXPgJc3qi-l6PJZw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847519347668-pfvncth6nf95mu96fqhfvolqe0m2le6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
